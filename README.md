@@ -8,6 +8,7 @@ It assumes that the studied body (typically the secondary) is locked and is rest
 Models can have solid and liquid layers, each having their own set of equations being solved using matrix propagation.
 
 To use it:
+- Download all files and folders.
 - First, add to the root a .txt file, tab separated, with the interior model to be used.
 Columns must be radius (m), density (kg.m-3), first Lame parameter lambda (Pa), second Lame parameter mu (Pa) (aka shear modulus), dynamic viscosity (Pa.s-1)
 - Add then a .m file containing the orbital informations of the system.
@@ -24,7 +25,6 @@ Mostly as wanted in the EDITABLE section. MAIN CALL section typically should not
 
 As of now, default version computes and displays all tidal displacements and stress with Maxwell rheology, and calculates failure using the Mohr Coulomb failure criteria assuming seismic conventions and lithostatic pressure.
 If changes are needed, please contact corresponding author at laurent.pou@jpl.nasa.gov
-
 
 Example files from Pou et al. 2023 - Tidal seismicity in the silicate interior of Europa are given for reference (Europa...txt and Europa_e, and Moon...txt and Moon_e)
 Typical run for Europa models with single cohesion and friction values is between 10 to 30 minutes.
