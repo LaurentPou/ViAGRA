@@ -42,6 +42,7 @@ Be careful and use low sampling values for initial tests.
 Memory and Time optimization will be done in future releases.
 - There are many figures in the default version (almost 100).
 A separate file for figure management will be done soon (currently managed with booleans in Matlab files/Main_Viagra.m).
+- This was coded in Matlab2022b, but should work with Matlab 2019a or more recent. Please contact the corresponding author in case of backward compatibility issues.
 
 
 Corresponding author for the current VIAGRA version and maintenace:L Laurent Pou (laurent.pou@jpl.nasa.gov)
