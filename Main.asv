@@ -1,0 +1,51 @@
+%% EDITABLE PART
+clear all;
+close all;
+clc;
+
+
+%% Select files to run, as wanted
+% Interior model files:
+
+%nom_file='Moon_Garcia_2019_M1';
+%nom_file='Moon_Garcia_2019_M2_edit';
+%nom_file='Moon_Weber_2011';
+%nom_file='EuropaSolidCore_v2';
+%nom_file='EuropaLiquidCore_v2';
+nom_file='EuropaNoCore_v2';
+
+% Orbital properties files:
+%choice_planet = 'Moon_e';
+%choice_planet = 'Europa_e';
+
+
+%% Parameters for simulation, as wanted
+cohe = 5000; % Cohesion, Pa
+friction = (1e-5)*pi/180; % Angle of internal friction, rad
+nbtranche = 50; 
+
+% Mesh and position for plots ; must be even
+N_lat=4;%12;%46; %46 N_lat + 1 pts ; is in fact colatitude
+N_lon=8;%32;%92; %92 N_lon + 1 pts
+Frac_lat=100; % lat(1) = 1/fraclat*lat(2)to avoid 0 in denominator
+Nt=8;%384;%160/2; %8
+
+% Indexes for plot; must be between 1 and their respective N
+time_plot=floor(Nt/4)+1;%104/2; %5 for Didymoon, 1 (or 11/16?) for Minshull and Goulty % between 1 and Nt
+lat_plot=1;%round(N_lat*((90+13.2)/180)); % lat -13.2°
+lon_plot=1;%round(N_lon*((360-31.1)/360)); % longitude -31.1°
+
+% Must be between 0 (center) and 1 (surface)
+radius_plot=0.9;
+
+
+%% MAIN CALL: change separator depending on operating system, and keep 
+% Call to VIAGRA code and run with timer
+tic;
+cd 'Matlab files'\
+
+Main_Viagra_Benchmark_Sweep_NoFailure_Time;
+
+cd ..\
+toc;
+
