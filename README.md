@@ -18,7 +18,6 @@ a: semimajor axis of the studied body orbit around its primary (m)
 e: orbital eccentricity
 per: orbital period, used to derive the forcing frequency of the system. Can be changed to study Love numbers frequency dependency.
 Obliquity tides are not yet implemented. When they are, obliquity will be required in this file.
-
 - Fill the required parts in the Main.m file according to the previous steps and the wanted simulation.
 Mostly as wanted in the EDITABLE section. MAIN CALL section typically should not be modified; proceed with caution.
 
