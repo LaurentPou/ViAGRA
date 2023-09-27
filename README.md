@@ -45,7 +45,10 @@ A separate file for figure management will be done soon (currently managed with 
 - This was coded in Matlab2022b, but should work with Matlab 2019a or more recent. Please contact the corresponding author in case of backward compatibility issues.
 
 
-Corresponding author for the current VIAGRA version and maintenace:L Laurent Pou (laurent.pou@jpl.nasa.gov)
+Corresponding author for the current VIAGRA version and maintenace: Laurent Pou (laurent.pou@jpl.nasa.gov)
+
 Credits for VIAGRA main code: Nicolas Guyennon, Ozgur Karatekin, Laurent Pou
+
 Credits for visualisation tools: M_Map - mapping toolbox (Author: rich@eos.ubc.ca), Version 1.4h  Nov 2014
+
 A paper is in progress for future citation purposes.
